@@ -1,0 +1,131 @@
+body {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh; /* Takes full height of screen */
+  margin: 0;
+}
+
+
+.navbar {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  right: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  letter-spacing: 2px;
+  z-index: 10;
+}
+
+nav{
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+span {
+  font-family: 'Montserrat';
+
+}
+nav ul {
+  display: flex;
+  gap: 65px;
+  padding: 0;
+  margin: 10px 0;
+  list-style: none;}
+nav a {
+  text-decoration: none;
+  transition: color 0.3s;}
+nav a:hover {
+  color: teal;}
+
+
+
+
+a {
+  color: rgb(0, 0, 0)
+}
+
+h1 {
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+.content {
+  font-family: 'Montserrat';
+  margin-top:100px;
+  margin-left: 360px;
+  margin-right: 360px;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+.drawing {
+  width:400px; 
+  height:auto;
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.center-text {
+  text-align: center;
+  font-size: 64px;
+  text-shadow: 0px 4.5px 0rem rgb(255, 255, 255);
+  position: relative;
+  z-index: 1;
+  padding-top: 400px;
+}
+
+.image-text {
+    font-size: 32px;
+    font-weight: bold;
+    text-align:center;
+    font-family:'Courier New', Courier, monospace;
+  }
+
+footer {
+  margin-top:auto;
+  font-family:'Courier New', Courier, monospace;
+  background-color:black;
+  text-align:center;
+  color:white;
+  padding:10px;
+  font-size:12px;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  nav ul {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  p {
+    margin: 100px 20px;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  
+  .drawing {
+    width: 80%;
+    max-width: 300px;
+    top: 35%;
+  }
+  
+  .center-text {
+    font-size: 32px;
+    padding-top: 250px;
+  }
+  
+  .image-text {
+    font-size: 20px;
+  }
+}

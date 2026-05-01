@@ -1,3 +1,5 @@
+html {}
+
 body {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
@@ -6,44 +8,6 @@ body {
   min-height: 100vh; /* Takes full height of screen */
   margin: 0;
 }
-
-
-.navbar {
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  right: 20px;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 14px;
-  letter-spacing: 2px;
-  z-index: 10;
-}
-
-nav{
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-span {
-  font-family: 'Montserrat';
-
-}
-nav ul {
-  display: flex;
-  gap: 65px;
-  padding: 0;
-  margin: 10px 0;
-  list-style: none;}
-nav a {
-  text-decoration: none;
-  transition: color 0.3s;}
-nav a:hover {
-  color: teal;}
-
-
-
 
 a {
   color: rgb(0, 0, 0)
@@ -62,7 +26,7 @@ h1 {
   line-height: 40px;
   font-size: 18px;
 }
-
+/*Home*/
 .drawing {
   width:400px; 
   height:auto;
@@ -71,24 +35,22 @@ h1 {
   top: 40%;
   left: 47%;
   transform: translate(-50%, -50%);
-  z-index: -1;
-}
-
-.center-text {
+  z-index: -1;}
+.name {
   text-align: center;
   font-size: 64px;
   text-shadow: 0px 4.5px 0rem rgb(255, 255, 255);
   position: relative;
   z-index: 1;
+  font-weight: bold;
   padding-top: 400px;
-}
-
-.image-text {
+  font-family: 'Montserrat'}
+.name-text {
     font-size: 32px;
     font-weight: bold;
     text-align:center;
     font-family:'Courier New', Courier, monospace;
-  }
+    text-align: center;}
 
 footer {
   margin-top:auto;
@@ -100,32 +62,44 @@ footer {
   font-size:12px;
 }
 
-/* Mobile responsive styles */
-@media (max-width: 768px) {
-  nav ul {
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  p {
-    margin: 100px 20px;
-    line-height: 1.6;
-    font-size: 16px;
-  }
-  
-  .drawing {
-    width: 80%;
-    max-width: 300px;
-    top: 35%;
-  }
-  
-  .center-text {
-    font-size: 32px;
-    padding-top: 250px;
-  }
-  
-  .image-text {
-    font-size: 20px;
-  }
+/*navigation bar */
+nav {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat';
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  gap: 1 rem;
+}
+nav ul li {
+  display: inline;
+} 
+nav ul li:not(:last-child)::after {
+  content: " ● ";
+  padding: 2px;
+}
+
+.brand {
+  position:absolute;
+  padding: 10px;
+  font-family: 'Montserrat'
+}
+
+ul li {
+  text-align: left;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #777777;
+}
+
+a:hover {
+  text-decoration: underline;
 }

@@ -56,15 +56,11 @@ h1 {
 footer {
   margin-top:auto;
   font-family:'Courier New', Courier, monospace;
-  background-color:black;
+  background-color:rgb(255, 255, 255);
   text-align:center;
-  color:white;
+  color:rgb(0, 0, 0);
   padding:10px;
   font-size:12px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
 }
 
 /*navigation bar */
@@ -116,7 +112,7 @@ a, a:visited {
 }
 
 a:hover {
-  color: skyblue
+  color: greenyellow;
 }
 
 .ticker {

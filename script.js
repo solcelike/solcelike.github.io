@@ -16,4 +16,3 @@ for (let link in links) {
   navbaritem.appendChild(a);
   navbar.appendChild(navbaritem);
 }
-

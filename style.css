@@ -20,7 +20,8 @@ h1 {
 
 .content {
   font-family: 'Montserrat';
-  margin-top:100px;
+  margin-top:50px;
+  margin-bottom:50px;
   margin-left: 360px;
   margin-right: 360px;
   line-height: 40px;
@@ -60,35 +61,49 @@ footer {
   color:white;
   padding:10px;
   font-size:12px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 /*navigation bar */
 nav {
-  padding: 10px 0;
-  display: flex;
+  padding: 20px;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: center;
-  font-family: 'Montserrat';
+  font-family: 'Courier New', Courier, monospace;
+  font-size:16px;
+  background-color:rgb(0, 0, 0)
 }
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display:flex;
-  gap: 1 rem;
+  gap: 3rem;
 }
 nav ul li {
   display: inline;
 } 
 nav ul li:not(:last-child)::after {
-  content: " ● ";
   padding: 2px;
 }
 
 .brand {
-  position:absolute;
-  padding: 10px;
-  font-family: 'Montserrat'
+  font-family: 'Montserrat';
+  color: white;
+  grid-column: 1;
+  justify-self: start;
+}
+
+nav ul {
+  grid-column: 2;
+  justify-self: center;
+  padding:0;
+  display: flex;
 }
 
 ul li {
@@ -97,9 +112,18 @@ ul li {
 
 a, a:visited {
   text-decoration: none;
-  color: #777777;
+  color: #ffffff;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: skyblue
+}
+
+.ticker {
+  background-color:rgb(45, 45, 45);
+  color: white;
+  font-family:'Courier New', Courier, monospace;
+  padding:5px;
+  width:100%;
+  text-align:center;
 }

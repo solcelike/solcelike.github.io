@@ -1,8 +1,9 @@
-html {}
+html {
+}
 
 body {
   background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  color: #444444;
   display:flex;
   flex-direction: column;
   min-height: 100vh; /* Takes full height of screen */
@@ -10,7 +11,7 @@ body {
 }
 
 a {
-  color: rgb(0, 0, 0)
+  color: rgb(255, 255, 142);
 }
 
 h1 {
@@ -36,17 +37,47 @@ h1 {
   left: 47%;
   transform: translate(-50%, -50%);
   z-index: -1;}
+  
+.profile-header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 70%;
+  min-height: 220px;
+  box-sizing: border-box;
+  margin: 32px auto 0;
+  place-items: center;
+  background-color: rgba(103, 112, 124);
+  background-image: radial-gradient(circle at 20px 20px, rgba(118, 127, 137) 15px, transparent 17.5px), radial-gradient(circle at 60px 60px, rgba(118, 127, 137) 15px, transparent 17.5px);
+  background-size: 80px 80px;
+  animation: diagonal-dots 8s linear infinite;
+  border-radius: 4px;
+}
+
+@keyframes diagonal-dots {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 80px 80px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .profile-header {
+    animation: none;
+  }
+}
+
 .name {
   text-align: center;
-  font-size: 64px;
-  text-shadow: 0px 4.5px 0rem rgb(255, 255, 255);
-  position: relative;
-  z-index: 1;
+  font-size: 28px;
   font-weight: bold;
-  padding-top: 400px;
-  font-family: 'Montserrat'}
+  font-family: 'Montserrat';
+  margin-top: 8px;
+}
 .name-text {
-    font-size: 32px;
+    font-size: 22px;
     font-weight: bold;
     text-align:center;
     font-family:'Courier New', Courier, monospace;
